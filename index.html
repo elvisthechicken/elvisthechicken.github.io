@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<title>Alex's Stag Do</title>
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+</head>
+<body>
+<header>
+  <span class="title">Alex's Stag Do</span>
+</header>
+<main id="main">
+<section id="countsec">
+<ul class="laddown">
+<li>
+<span class="days">00</span>
+<p>Days</p>
+</li>
+<li class="seperator">:</li>
+<li>
+<span class="hours">00</span>
+<p>Hours</p>
+</li>
+<li class="seperator">:</li>
+<li>
+<span class="minutes">00</span>
+<p>Minutes</p>
+</li>
+<li class="seperator">:</li>
+<li>
+<span class="seconds">00</span>
+<p>Seconds</p>
+</li>
+</ul>
+</section>
+</main>
+<footer>
+<br/>
+</footer>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.downCount.js"></script>
+<script class="source" type="text/javascript">
+$('.laddown').downCount({ date: '04/1/2015 8:00:00', offset: -1 });
+</script>
+</body>
+</html>
