@@ -21,7 +21,10 @@ var Countdown = (function () {
     });
 
     $penguin.bind('modal:open', function () {
-      audio.pause();
+      if (!!muted) return;
+
+      muted = !muted;
+      audio.muted = muted;
     });
 
     $penguin.bind('modal:close', function () {
@@ -32,7 +35,8 @@ var Countdown = (function () {
       var src = vid.attr('src');
       vid.attr('src', '');
       vid.attr('src', src);
-      audio.play();
+      muted = !muted;
+      audio.muted = muted;
     });
   }
 
