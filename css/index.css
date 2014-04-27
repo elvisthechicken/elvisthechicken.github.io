@@ -51,13 +51,12 @@ body {
   text-align:center;
   margin:12px auto;
   width:830px;
-  height:237px;
 }
 
 #countsec {
   width:700px;
   height:140px;
-  margin:-50px 0 0 -360px;
+  margin:-60px 0 0 -360px;
   left:50%;
   top:50%;
   position:absolute;
@@ -210,4 +209,61 @@ ul.footer-menu li p {
 #monthly-pic {
   width: 800px;
   display: none;
+}
+
+@media only screen and ( max-width: 720px ) {
+  body {
+    background:#000;
+  }
+
+  main {
+    height: auto;
+  }
+
+  #countsec {
+    width:300px;
+    height:auto;
+    margin:80px 0 0 -150px;
+    position:relative;
+  }
+
+  #quote {
+    width: 300px;
+    height: auto;
+    position: relative;
+    margin:80px 0 0 -150px;
+  }
+
+  #logo {
+    width:500px;
+  }
+
+  ul.sd-countdown {margin-bottom:200px;}
+  ul.sd-countdown li{display:block;}
+  ul.sd-countdown li span{font-size:7.2444444em;line-height:1em;}
+  ul.sd-countdown li.seperator{display:none;}
+  ul.sd-countdown li p{font-size:1.5rem;line-height:1.2em;}
+
+  footer {
+    margin-top: 80px;
+    position: relative;
+  }
+
+  ul.footer-menu li {
+    display: none;
+    margin-bottom: 20px;
+  }
+
+  ul.footer-menu #suggestions {
+    display: block;
+  }
+}
+
+@media only screen and ( max-width: 500px ) {
+  #logo {
+    width:395px;
+  }
+}
+
+@media only screen and ( max-width: 400px ) {
 }
