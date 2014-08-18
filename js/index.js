@@ -16,7 +16,7 @@ var Countdown = (function () {
     });
 
     $countDown.downCount({
-      date: '04/1/2015 8:00:00',
+      date: '03/25/2015 00:00:00',
       offset: -1
     });
 
